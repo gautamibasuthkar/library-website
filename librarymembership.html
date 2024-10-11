@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Membership Sign Up - Vallejo Public Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+
+    <div class="top-header">
+      <div class="contact-info">
+        <p>Location: 567 ABC Street, Sausalito, CA</p>
+        <p>Contact: 510-000-0000</p>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="C:\Users\g\Web Design\Web-Designing-website\vallejo.png" alt="Vallejo Public Library Logo" width="100" height="100">
+        </div>
+        <div class="search-bar">
+          <form action="/search" method="GET">
+            <input type="text" placeholder="Search book catalog" name="search-book">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <header>
+      <h1>Vallejo Public Library</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="latestnews.html">Latest News</a>
+        <a href="bookcatalog.html">Book Catalog</a>
+        <a href="librarymembership.html">Library Membership</a>
+        <a href="contact-us.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="signup-section">
+        <h2>Sign Up for Library Card</h2>
+        <form action="/submit-signup" method="POST">
+          <input type="text" name="fullname" placeholder="Full Name" required /><br />
+          <input type="email" name="email" placeholder="Email Address" required /><br />
+          <input type="text" name="address" placeholder="Address" required /><br />
+          <input type="tel" name="phone" placeholder="Phone Number" required /><br />
+          <input type="password" name="password" placeholder="Password" required /><br />
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Vallejo Public Library. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
